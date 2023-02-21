@@ -1,1 +1,1 @@
-# blogsAll
+# blogs
