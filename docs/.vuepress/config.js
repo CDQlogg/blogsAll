@@ -37,6 +37,16 @@ module.exports = {
             { text: "掘金", link: "https://juejin.cn/user/1293506657925367" },
             { text: "Github", link: "https://github.com/CDQlogg" }
           ]
+        },
+        {
+          text: "娱乐",
+          items: [
+            { text: "小霸王", link: "https://www.yikm.net/nes?tag=%E5%8A%A8%E4%BD%9C&e=1" },
+            { text: "cook", link: "https://cook.aiurs.co/" },
+            { text: "fakeupdate", link: "https://fakeupdate.net/" },
+            { text: "24k导航", link: "https://www.24kdh.com/" },
+            { text: "bilibili", link: "https://www.bilibili.com/" },
+          ]
         }
       ],
       blogConfig: {
@@ -45,7 +55,7 @@ module.exports = {
           text: "博客", // 默认文案 “分类”
         },
         tag: {
-          location: 4, // 在导航栏菜单中所占的位置，默认4
+          location: 5, // 在导航栏菜单中所占的位置，默认4
           text: "Tag", // 默认文案 “标签”
         },
       },
@@ -92,7 +102,8 @@ module.exports = {
               // 悬浮窗样式
               floatStyle: { bottom: "20px", "z-index": "999999" },
             },
-          ],
+        ],
+
      ],
      base: '/blogs/'
   }
