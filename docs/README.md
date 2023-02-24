@@ -11,5 +11,5 @@ heroText: 理想三旬
 #   } 
 
 bgImage: "/background1.jpg"
-# bgImageStyle: { height: "100%" }
+bgImageStyle: { height: "400px" }
 ---

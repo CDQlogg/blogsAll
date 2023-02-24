@@ -198,3 +198,19 @@ protected void onCreate(Bundle savedInstanceState) {
 >
     <u>文本</u>
 >
+
+## 自定义容器(custom containers)
+输入
+>
+        ::: tip
+        This is a tip
+        :::
+
+        ::: warning
+        This is a warning
+        :::
+
+        ::: danger
+        This is a dangerous warning
+        :::
+>

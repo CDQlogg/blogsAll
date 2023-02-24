@@ -1,7 +1,8 @@
 module.exports = {
     title: "理想三旬",
-    description: '不积硅步,无以至千里',
+    description: '   ',
     theme: 'reco',
+    base: '/blogs/',
     head: [
       [
         'link',
@@ -29,25 +30,66 @@ module.exports = {
       logo: "/tx.jpg",
       authorAvatar: "/tx.jpg",
       type: "blog",
+      sidebarDepth: 2,
+      sidebar:{
+        '/fontend/JavaScript/':[
+          {
+            title: 'JavaScript',
+            collapsable: false, //是否展开折叠
+            children:[
+              '1'
+            ]
+          } 
+        ],
+        '/fontend/Vue/':[
+          {
+            title: 'Vue',
+            collapsable: false, //是否展开折叠
+            children:[
+              '1'
+            ]
+          } 
+        ],
+        '/fontend/React/':[
+          {
+            title: 'React',
+            collapsable: false, //是否展开折叠
+            children:[
+              '1'
+            ]
+          } 
+        ]
+      },
       nav: [
         { text: "首页", link: "/" },
         {
           text: "External links",
           items: [
-            { text: "掘金", link: "https://juejin.cn/user/1293506657925367" },
-            { text: "Github", link: "https://github.com/CDQlogg" }
+            { text: "掘金", link: "https://juejin.cn/user/1293506657925367", icon: 'reco-juejin' },
+            { text: "Github", link: "https://github.com/CDQlogg", icon: 'reco-github' },
           ]
         },
         {
-          text: "娱乐",
+          text: "学习文档",
           items: [
-            { text: "小霸王", link: "https://www.yikm.net/nes?tag=%E5%8A%A8%E4%BD%9C&e=1" },
+            { text: "leetcode", link: "https://leetcode.cn/" },
+            { text: "vue2", link: "https://v2.cn.vuejs.org/" },
+            { text: "微信小程序", link: "https://developers.weixin.qq.com/miniprogram/dev/framework/" },
+            { text: "React", link: "https://beta.reactjs.org/learn/thinking-in-react" },
+            { text: "ES6", link: "https://es6.ruanyifeng.com/" },
+            { text: "uniapp", link: "https://uniapp.dcloud.net.cn/" },
+            { text: "TypeScript", link: "https://www.tslang.cn/index.html" },
             { text: "cook", link: "https://cook.aiurs.co/" },
-            { text: "fakeupdate", link: "https://fakeupdate.net/" },
-            { text: "24k导航", link: "https://www.24kdh.com/" },
-            { text: "bilibili", link: "https://www.bilibili.com/" },
           ]
-        }
+        },
+        {
+          text: "前端笔记文档",
+          items: [
+            { text: "JavaScript", link: "/fontend/JavaScript/" },
+            { text: "vue", link: "/fontend/Vue/" },
+            { text: "React", link: "/fontend/React/" },
+          ]
+        },
       ],
       blogConfig: {
         category: {
@@ -55,11 +97,11 @@ module.exports = {
           text: "博客", // 默认文案 “分类”
         },
         tag: {
-          location: 5, // 在导航栏菜单中所占的位置，默认4
+          location: 6, // 在导航栏菜单中所占的位置，默认4
           text: "Tag", // 默认文案 “标签”
         },
       },
-      author: "小陈",
+      author: "小陈同学",
     },
     locales: {
         "/": {
@@ -67,6 +109,7 @@ module.exports = {
         },
       },
     plugins: [
+
         [
           "sakura",
           {
@@ -85,8 +128,8 @@ module.exports = {
                 {
                   name: "乌梅子酱",
                   artist: "李荣浩",
-                  url: "http://m701.music.126.net/20230221203105/b82a756d45ff1c06973923b99ca51394/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/22046760991/6d9b/eb87/f3de/a3cb8fd53c760fb3193b953df03b7531.mp3",
-                  cover:"https://p0.itc.cn/q_70/images03/20221123/0a91f888c2d34f3586b02ce00365bf9a.png",
+                  url: "http://file.cqcdq.top/qLhu8WxN0tfzSItJ84xmQBtOYV3N2T76/%E4%B9%8C%E6%A2%85%E5%AD%90%E9%85%B1.mp3",
+                  cover:"http://file.cqcdq.top/5XfAobgLjeSkFMGtFowkqrjVDo9cmA6P/lrh.png",
                 },
                 {
                   name: "강남역 4번 출구",
@@ -103,7 +146,17 @@ module.exports = {
               floatStyle: { bottom: "20px", "z-index": "999999" },
             },
         ],
-
+        [
+          "vuepress-plugin-live2d",
+          {
+            "modelName": ['z16','Epsilon2.1','izumi','koharu','shizuku','miku', 'hijiki', 'tororo'],
+            "mobileShow": false,
+            'position':'left'
+          }
+        ],
+        ['go-top'],
      ],
-     base: '/blogs/'
-  }
+
+
+
+}
