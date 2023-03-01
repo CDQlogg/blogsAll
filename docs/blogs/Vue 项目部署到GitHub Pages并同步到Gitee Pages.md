@@ -54,4 +54,4 @@ tags:
 ## 三、项目更新
 - 往后项目的更新，首先还是先将代码push到github上面，待GitHub Pages部署成功后，再在gitee的项目中，点击更新按钮，将github项目的代码强制同步到gitee中即可。  
 
-![](../../docs/.vuepress/public/update.png)
+![](http://file.cqcdq.top/Ra4nBipCifJ0mtGbs3K4r9xNyWPGCjSf/update.png)

@@ -8,7 +8,7 @@ module.exports = {
         'link',
         {
           rel: 'icon',
-          href: '/logo.jpg',
+          href: 'http://file.cqcdq.top/5WNDCsAGGrGOHFjWsXETyDdEASrrDTBs/logo.JPG',
         },
       ],
       ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
@@ -27,17 +27,26 @@ module.exports = {
     ],
     themeConfig: {
       subSidebar:'auto',
-      logo: "/tx.jpg",
-      authorAvatar: "/tx.jpg",
+      logo: "http://file.cqcdq.top/cxBnnKcx1oUW3tVQgeb65kdAAL4VtGgp/tx.JPG",
+      authorAvatar: "http://file.cqcdq.top/cxBnnKcx1oUW3tVQgeb65kdAAL4VtGgp/tx.JPG",
       type: "blog",
       sidebarDepth: 2,
       sidebar:{
+        '/fontend/HTML5+CSS3/':[
+          {
+            title: 'HTML5+CSS3',
+            collapsable: false, //是否展开折叠
+            children:[
+              'HTML5基础','HTML5智能表单','CSS3基础','CSS3运动体系','视频音频'
+            ]
+          } 
+        ],
         '/fontend/JavaScript/':[
           {
             title: 'JavaScript',
             collapsable: false, //是否展开折叠
             children:[
-              '1'
+              '变量类型','深拷贝与浅拷贝','原型与原型链','实现class与extends','继承与实现','作用域、执行上下文与闭包','this','apply、call、bind实现','同步与异步','AMD、CMD、CommonJS与ES6模块化','script标签之async与defer','改变数组本身的api','window之location、navigator','ajax与fetch','WebSocket','短轮询、长轮询与WebSocket','长连接与短连接','存储','跨域','setTimeout与setInterval','requestAnimationFrame','事件'
             ]
           } 
         ],
@@ -85,6 +94,7 @@ module.exports = {
         {
           text: "前端笔记文档",
           items: [
+            { text: "HTML5+CSS3", link: "/fontend/HTML5+CSS3/" },
             { text: "JavaScript", link: "/fontend/JavaScript/" },
             { text: "vue", link: "/fontend/Vue/" },
             { text: "React", link: "/fontend/React/" },

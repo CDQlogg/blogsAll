@@ -76,7 +76,7 @@ function promiseClick(){
 	});	
 ```
 
-执行结果：![](../../docs/.vuepress/public/promise3.png)  
+执行结果：![](http://file.cqcdq.top/Byk1EYmLNqcvhUCqyRh8UEW4ngG51mci/promise3.png)  
 
 效果和写在then的第二个参数里面一样。它将大于10的情况下的失败回调的原因输出，但是，它还有另外一个作用：在执行resolve的回调（也就是上面then中的第一个参数）时，如果抛出异常了（代码出错了），那么并不会报错卡死js，而是会进到这个catch方法中。
 
@@ -141,7 +141,7 @@ function promiseClick1(){
 
 Promise.all来执行，all接收一个数组参数，这组参数为需要执行异步操作的所有方法，里面的值最终都算返回Promise对象。这样，三个异步操作的并行执行的，等到它们都执行完后才会进到then里面。那么，三个异步操作返回的数据哪里去了呢？都在then里面，all会把所有异步操作的结果放进一个数组中传给then，然后再执行then方法的成功回调将结果接收，结果如下：（分别执行得到结果，all统一执行完三个函数并将值存在一个数组里面返回给then进行回调输出）：  
 
-![](../../docs/.vuepress/public/promise4.png)  
+![](http://file.cqcdq.top/rtamWYJnmz8D0de6DUuOjgrFIB6ICjyC/promise4.png)  
 
 这样以后就可以用all并行执行多个异步操作，并且在一个回调中处理所有的返回数据，比如你需要提前准备好所有数据才渲染页面的时候就可以使用all,执行多个异步操作将所有的数据处理好，再去渲染
 
@@ -208,7 +208,7 @@ function promiseClick1(){
 ```
 当2s后promiseClick1执行完成后就已经进入到了then里面回调，在then里面的回调开始执行时，promiseClick2()和promiseClick3()并没有停止，仍旧再执行。于是再过3秒后，输出了他们各自的值，但是将不会再进入race的任何回调。如图2s生成10进入race的成功回调后，其余函数继续执行，但是将不会再进入race的任何回调，2s生成16进入了race的失败回调，其余的继续执行，但是将不会再进入race的任何回调。  
 
-![](../../docs/.vuepress/public/promise5.1.png)![](../../docs/.vuepress/public/promise5.2.png)  
+![](http://file.cqcdq.top/XFnrDAwrUUDEUFlzLwtRnn453OQSEkp0/promise5.1.png)![](http://file.cqcdq.top/wlNYNmymEePFeJR2NV9oxuc1M6B7X9kx/promise5.2.png)  
 
 race的使用比如可以使用在一个请求在10s内请求成功的话就走then方法，如果10s内没有请求成功的话进入reject回调执行另一个操作。
 
