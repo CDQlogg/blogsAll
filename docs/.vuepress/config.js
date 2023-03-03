@@ -119,7 +119,6 @@ module.exports = {
         },
       },
     plugins: [
-
         [
           "sakura",
           {
@@ -130,6 +129,18 @@ module.exports = {
               replace: false, // false 默认图 true 换图 需要填写httpUrl地址
             },
           },
+        ],
+        [
+          'vuepress-plugin-comment',
+          {
+            choosen: 'valine', 
+            // options选项中的所有参数，会传给Valine的配置
+            options: {
+              el: '#valine-vuepress-comment',
+              appId: 'ohIPrzy1mKHozOG22Kb5ibW2-gzGzoHsz',
+              appKey: '16EEoZu5n9pgPylsdFMSDNFA'
+            }
+          }
         ],
         [
             "@vuepress-reco/vuepress-plugin-bgm-player",
@@ -156,17 +167,15 @@ module.exports = {
               floatStyle: { bottom: "20px", "z-index": "999999" },
             },
         ],
-        [
-          "vuepress-plugin-live2d",
-          {
-            "modelName": ['z16','Epsilon2.1','izumi','koharu','shizuku','miku', 'hijiki', 'tororo'],
-            "mobileShow": false,
-            'position':'left'
-          }
-        ],
         ['go-top'],
+        ['demo-container']
      ],
-
+     configureWebpack: {
+      node: {
+        global: true,
+        process: true
+      }
+    }
 
 
 }

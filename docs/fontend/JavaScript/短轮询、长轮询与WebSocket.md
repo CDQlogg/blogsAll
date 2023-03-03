@@ -1,6 +1,10 @@
 ---
 title: 短轮询、长轮询与WebSocket  
 date: 2023-3-01
+categories:
+  - 前端
+tags:
+  - JavaScript
 permalink: /fontend/JavaScript/短轮询、长轮询与WebSocket
 ---
 

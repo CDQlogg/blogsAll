@@ -1,6 +1,10 @@
 ---
 title: apply、call、bind实现  
 date: 2023-3-01
+categories:
+  - 前端
+tags:
+  - JavaScript
 permalink: /fontend/JavaScript/apply、call、bind实现
 ---
 

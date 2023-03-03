@@ -1,6 +1,10 @@
 ---
 title: setTimeout与setInterval  
 date: 2023-3-01
+categories:
+  - 前端
+tags:
+  - JavaScript
 permalink: /fontend/JavaScript/setTimeout与setInterval
 ---
 
