@@ -1,8 +1,6 @@
 ---
 title: ajax与fetch  
 date: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 permalink: /fontend/JavaScript/ajax与fetch

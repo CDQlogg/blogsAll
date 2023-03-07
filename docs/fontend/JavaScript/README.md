@@ -1,8 +1,6 @@
 ---
 title: JavaScript  
 data: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 ---

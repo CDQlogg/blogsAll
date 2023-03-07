@@ -1,8 +1,6 @@
 ---
 title: AMD、CMD、CommonJS与ES6模块化  
 date: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 permalink: /fontend/JavaScript/AMD、CMD、CommonJS与ES6模块化

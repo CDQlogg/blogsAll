@@ -55,7 +55,7 @@ module.exports = {
             title: 'Vue',
             collapsable: false, //是否展开折叠
             children:[
-              '1'
+              'vue2基本使用','组件化','axios','VueRouter','Vuex','vue项目跨域问题及解决'
             ]
           } 
         ],
@@ -71,13 +71,6 @@ module.exports = {
       },
       nav: [
         { text: "首页", link: "/" },
-        {
-          text: "External links",
-          items: [
-            { text: "掘金", link: "https://juejin.cn/user/1293506657925367", icon: 'reco-juejin' },
-            { text: "Github", link: "https://github.com/CDQlogg", icon: 'reco-github' },
-          ]
-        },
         {
           text: "学习文档",
           items: [
@@ -100,6 +93,7 @@ module.exports = {
             { text: "React", link: "/fontend/React/" },
           ]
         },
+        { text: "Github", link: "https://github.com/CDQlogg", icon: 'reco-github'},
       ],
       blogConfig: {
         category: {

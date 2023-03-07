@@ -1,8 +1,6 @@
 ---
 title: requestAnimationFrame  
 date: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 permalink: /fontend/JavaScript/requestAnimationFrame

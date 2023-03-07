@@ -1,8 +1,6 @@
 ---
 title: 改变数组本身的api  
 date: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 permalink: /fontend/JavaScript/改变数组本身的api

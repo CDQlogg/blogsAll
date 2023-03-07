@@ -1,8 +1,6 @@
 ---
 title: script标签之async与defer  
 date: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 permalink: /fontend/JavaScript/script标签之async与defer

@@ -1,8 +1,6 @@
 ---
 title: window之location、navigator  
 date: 2023-3-01
-categories:
-  - 前端
 tags:
   - JavaScript
 permalink: /fontend/JavaScript/window之location、navigator
